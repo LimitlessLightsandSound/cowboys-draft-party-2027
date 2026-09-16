@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Limitless × Dallas Cowboys — Draft Party 2027 // Ford Center at The Star</title>
+<meta name="description" content="Technical production proposal for the Dallas Cowboys Draft Party at Ford Center at The Star, Frisco. Quotation 1675 from Limitless Lights + Sound.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#070d16;
+    --ink-2:#0c1526;
+    --slate:#111e33;
+    --silver:#cdd6dc;
+    --silver-2:#9aa9b4;
+    --royal:#5b8fd4;
+    --royal-2:#7389a6;
+    --ivory:#eef3f7;
+    --paper:#c4d0da;
+    --mute:#7e8d99;
+    --line:rgba(205,214,220,.17);
+    --line-soft:rgba(205,214,220,.085);
+    --line-royal:rgba(91,143,212,.20);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--ink);color:var(--paper);
+    font-family:'Archivo',sans-serif;font-weight:300;line-height:1.7;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;
+  }
+
+  .glow{position:fixed;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(52vw 52vh at 84% 2%, rgba(205,214,220,.12), transparent 62%),
+      radial-gradient(46vw 42vh at 6% 34%, rgba(91,143,212,.07), transparent 58%),
+      radial-gradient(58vw 52vh at 50% 106%, rgba(205,214,220,.075), transparent 60%);}
+  .grain{position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.03;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");}
+
+  .wrap{position:relative;z-index:2;max-width:1040px;margin:0 auto;padding:0 36px}
+
+  .eyebrow{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;
+    font-size:19px;letter-spacing:.02em;color:var(--silver);}
+  h1,h2,h3,.display{font-family:'Bebas Neue',sans-serif;font-weight:400;color:var(--ivory);line-height:1;letter-spacing:.015em}
+  .serif{font-family:'Cormorant Garamond',serif}
+
+  /* ————— HERO ————— */
+  /* OPTION A (default): no photography. */
+  .hero{position:relative;overflow:hidden;min-height:96vh;display:flex;flex-direction:column;justify-content:space-between;padding:44px 0 56px}
+  .hero-bg{position:absolute;inset:0;z-index:0;
+    background:
+      radial-gradient(72vw 70vh at 80% -10%, rgba(205,214,220,.20), transparent 60%),
+      radial-gradient(58vw 58vh at 10% 44%, rgba(91,143,212,.085), transparent 58%),
+      radial-gradient(84vw 46vh at 50% 110%, rgba(205,214,220,.11), transparent 60%),
+      linear-gradient(172deg, #0b1524 0%, var(--ink) 55%, #050a12 100%);}
+  .hero-bg::before{content:'';position:absolute;inset:0;
+    background-image:linear-gradient(rgba(205,214,220,.05) 1px, transparent 1px);
+    background-size:100% 92px;
+    -webkit-mask-image:radial-gradient(72% 62% at 52% 40%, #000 10%, transparent 76%);
+    mask-image:radial-gradient(72% 62% at 52% 40%, #000 10%, transparent 76%);}
+  .hero-bg::after{content:'';position:absolute;inset:0;
+    background:linear-gradient(180deg, transparent 62%, rgba(7,13,22,.7) 84%, var(--ink) 100%);}
+
+  /* --- OPTION B: with a hero photograph. Swap for the three .hero-bg rules above.
+  .hero-bg{position:absolute;inset:0;z-index:0;
+    background:
+      linear-gradient(180deg, rgba(7,13,22,.54) 0%, rgba(7,13,22,.66) 42%, rgba(7,13,22,.9) 80%, var(--ink) 100%),
+      radial-gradient(58vw 58vh at 82% 6%, rgba(205,214,220,.16), transparent 60%),
+      url('img/hero.jpg') center 48%/cover no-repeat;}
+  .hero-bg::after{content:'';position:absolute;inset:0;
+    box-shadow:inset 0 -130px 120px -40px var(--ink), inset 0 100px 90px -50px rgba(7,13,22,.65)}
+  --- */
+
+  .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+  .logo{font-family:'Bebas Neue';font-size:27px;letter-spacing:.17em;color:var(--ivory)}
+  .logo small{display:block;font-family:'Cormorant Garamond';font-style:italic;font-size:13px;letter-spacing:.06em;color:var(--royal-2);margin-top:2px}
+  .forwhom{text-align:right;font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--royal-2);line-height:1.7;font-style:italic}
+  .forwhom b{color:var(--silver);font-weight:600;font-style:normal;display:block;font-family:'Archivo';font-size:13px;letter-spacing:.02em;margin:2px 0 1px}
+
+  .hero-mid{max-width:900px}
+  .hero-rule{width:58px;height:1px;background:linear-gradient(90deg,var(--silver),transparent);margin-bottom:26px}
+  .hero .eyebrow{display:block;margin-bottom:24px}
+  .hero h1{font-size:clamp(50px,8.6vw,112px);text-shadow:0 0 90px rgba(205,214,220,.22)}
+  .hero h1 em{font-style:normal;color:var(--silver);display:block}
+  .hero-lede{font-size:clamp(16px,1.9vw,20px);color:var(--paper);max-width:56ch;margin-top:28px;line-height:1.72}
+  .hero-foot{display:flex;flex-wrap:wrap;gap:40px;margin-top:6px}
+  .hf .k{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--royal-2);margin-bottom:2px}
+  .hf .v{font-family:'Archivo';font-size:15px;font-weight:400;color:var(--ivory)}
+
+  /* ————— sections ————— */
+  section{padding:66px 0}
+  .sec-eyebrow{display:block;margin-bottom:16px}
+  .sec-title{font-size:clamp(34px,5vw,60px);max-width:19ch;margin-bottom:20px;text-shadow:0 0 60px rgba(205,214,220,.13)}
+  .sec-intro{font-size:17px;color:var(--paper);max-width:62ch;line-height:1.7}
+
+  /* ————— POSITIONING ————— */
+  .lead-statement{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(27px,3.7vw,46px);line-height:1.28;color:var(--ivory);max-width:23ch}
+  .lead-statement b{font-weight:600;color:var(--silver);font-style:italic}
+  .promise-row{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px}
+  .promise-col .kk{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--silver);margin-bottom:12px;display:block}
+  .promise-col h3{font-family:'Bebas Neue';font-size:29px;color:var(--ivory);margin-bottom:12px;letter-spacing:.04em}
+  .promise-col p{font-size:15.5px;color:var(--paper);line-height:1.72}
+
+  /* ————— ROOM CARDS ————— */
+  .rooms{display:flex;flex-direction:column;gap:18px}
+  .room{position:relative;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,var(--ink-2),var(--ink));transition:border-color .6s,transform .6s}
+  .room:hover{border-color:rgba(205,214,220,.32);transform:translateY(-2px)}
+  .room-media{position:relative;min-height:260px;overflow:hidden}
+  .room-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.3s ease}
+  .room:hover .room-media img{transform:scale(1.04)}
+  .room-media::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,21,38,.24),rgba(12,21,38,.55) 55%,var(--ink-2) 99%)}
+  .room-inner{position:relative;z-index:1;padding:38px 42px}
+  .room-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--line-soft)}
+  .room-num{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--royal);opacity:.8;margin-bottom:6px}
+  .room-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--silver);margin-bottom:4px}
+  .room h3{font-family:'Bebas Neue';font-size:clamp(29px,4vw,40px);color:var(--ivory);letter-spacing:.03em}
+  .room-price{text-align:right;flex-shrink:0}
+  .room-price .amt{font-family:'Bebas Neue';font-size:31px;color:var(--silver);letter-spacing:.02em;line-height:1.1}
+  .room-price .cap{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13.5px;color:var(--royal-2)}
+
+  .room-meta{display:flex;flex-wrap:wrap;gap:10px 34px;padding:18px 0 4px}
+  .rm{font-size:13.5px;color:var(--paper)}
+  .rm span{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--royal-2);margin-right:7px}
+
+  .spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:26px 34px;margin-top:20px;padding-top:22px;border-top:1px solid var(--line-soft)}
+  .spec-col .h{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--silver);margin-bottom:11px}
+  .spec-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+  .spec-col li{font-size:14px;color:var(--paper);line-height:1.5;padding-left:15px;position:relative}
+  .spec-col li::before{content:'—';position:absolute;left:0;top:0;color:var(--silver);opacity:.55}
+
+  .room-crew{margin-top:22px;padding-top:18px;border-top:1px solid var(--line-soft);font-size:14px;color:var(--paper)}
+  .room-crew b{font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:500;font-size:15px;color:var(--silver)}
+
+  .addon{margin-top:16px;padding:18px 22px;border-radius:12px;background:linear-gradient(120deg,rgba(91,143,212,.07),rgba(12,21,38,.6));border:1px solid var(--line-royal)}
+  .addon .at{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:17px;color:var(--royal);margin-bottom:6px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+  .addon .at b{font-family:'Bebas Neue';font-style:normal;font-size:22px;color:var(--silver);letter-spacing:.02em}
+  .addon p{font-size:14px;color:var(--paper);line-height:1.6}
+
+  /* ————— BACKBONE ————— */
+  .incl{display:grid;grid-template-columns:repeat(2,1fr);gap:36px}
+  .incl-card .h{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:23px;color:var(--silver);margin-bottom:6px}
+  .incl-card .sub{font-family:'Archivo';font-size:12px;font-weight:400;letter-spacing:.02em;color:var(--royal-2);margin-bottom:16px;padding-bottom:12px;border-bottom:1px solid var(--line-soft)}
+  .incl-card ul{list-style:none;display:flex;flex-direction:column;gap:10px}
+  .incl-card li{font-size:14.5px;color:var(--paper);line-height:1.5;padding-left:16px;position:relative}
+  .incl-card li::before{content:'—';position:absolute;left:0;top:0;color:var(--silver);opacity:.6}
+
+  /* ————— STATS STRIP ————— */
+  .stats{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;padding:34px 0;
+    border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .stat{text-align:center}
+  .stat .n{font-family:'Bebas Neue';font-size:clamp(34px,4.6vw,50px);color:var(--silver);line-height:1;letter-spacing:.02em;text-shadow:0 0 50px rgba(205,214,220,.25)}
+  .stat .l{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14.5px;color:var(--royal-2);margin-top:8px;line-height:1.4}
+
+
+  /* ————— GALLERY (only if using photography) ————— */
+  .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:46px}
+  .gallery figure{position:relative;border:1px solid var(--line);border-radius:14px;overflow:hidden;aspect-ratio:4/3}
+  .gallery img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s ease}
+  .gallery figure:hover img{transform:scale(1.05)}
+  .gallery figcaption{position:absolute;left:0;right:0;bottom:0;padding:30px 18px 13px;
+    background:linear-gradient(0deg,rgba(7,13,22,.94),rgba(7,13,22,.4) 60%,transparent);
+    font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--paper)}
+
+  /* ————— TIMELINE ————— */
+  .timeline{margin-top:10px}
+  .tl-row{display:grid;grid-template-columns:190px 1fr;gap:32px;padding:22px 0;border-bottom:1px solid var(--line-soft);align-items:baseline}
+  .tl-row:last-child{border-bottom:none}
+  .tl-when .date{font-family:'Bebas Neue';font-size:25px;color:var(--silver);letter-spacing:.04em;line-height:1.05}
+  .tl-when .day{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--royal-2)}
+  .tl-what h3{font-family:'Archivo';font-size:17px;font-weight:600;color:var(--ivory);margin-bottom:4px;display:inline-block}
+  .tl-what .star{color:var(--silver);margin-left:8px;font-size:15px}
+  .tl-what p{font-size:14.5px;color:var(--paper);line-height:1.6;max-width:60ch}
+
+  /* ————— VENUE REQS ————— */
+  .reqs{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+  .req{padding:26px 28px;border:1px solid var(--line-royal);border-radius:14px;background:linear-gradient(150deg,rgba(91,143,212,.05),rgba(12,21,38,.5))}
+  .req .rt{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--royal);margin-bottom:9px}
+  .req h3{font-family:'Bebas Neue';font-size:25px;color:var(--ivory);letter-spacing:.04em;margin-bottom:9px}
+  .req p{font-size:14.5px;color:var(--paper);line-height:1.65}
+  .req b{color:var(--silver);font-weight:600}
+
+  /* ————— INVESTMENT ————— */
+  .invest{background:linear-gradient(150deg,var(--slate),var(--ink-2));border:1px solid var(--line);border-radius:18px;padding:52px 52px;position:relative;overflow:hidden}
+  .invest::after{content:'';position:absolute;top:-30%;left:76%;transform:translateX(-50%);width:70%;height:160%;background:radial-gradient(closest-side,rgba(205,214,220,.14),transparent);pointer-events:none}
+  .inv-in{position:relative;z-index:1}
+  .inv-label{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:20px;color:var(--silver);margin-bottom:6px;text-align:center}
+  .inv-sub{text-align:center;font-size:13.5px;color:var(--royal-2);margin-bottom:22px}
+  .inv-figure{font-family:'Bebas Neue';font-size:clamp(54px,9.4vw,112px);color:var(--silver);line-height:.9;letter-spacing:.01em;text-shadow:0 0 70px rgba(205,214,220,.32);text-align:center}
+  .inv-figure span{font-size:.42em;vertical-align:baseline}
+  .inv-figcap{text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--paper);margin-top:12px}
+
+  .inv-lines{max-width:600px;margin:34px auto 0;border-top:1px solid var(--line-soft)}
+  .inv-line{display:flex;justify-content:space-between;align-items:baseline;gap:20px;padding:14px 2px;border-bottom:1px solid var(--line-soft);font-size:15px}
+  .inv-line .lab{color:var(--paper)}
+  .inv-line .lab small{display:block;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:13.5px;color:var(--royal-2);margin-top:2px}
+  .inv-line .val{font-family:'Archivo';font-weight:400;color:var(--ivory);white-space:nowrap}
+  .inv-line.sub-line .lab{padding-left:16px;font-size:14px;color:var(--mute)}
+  .inv-line.sub-line .val{font-size:14px;color:var(--paper)}
+  .inv-line.tax .val{color:var(--silver)}
+  .inv-line.total{border-bottom:none;padding-top:18px}
+  .inv-line.total .lab{font-family:'Bebas Neue';font-size:22px;letter-spacing:.04em;color:var(--ivory)}
+  .inv-line.total .val{font-family:'Bebas Neue';font-size:26px;letter-spacing:.03em;color:var(--ivory)}
+  .inv-head{font-family:'Archivo';font-size:11.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--silver);padding:24px 2px 8px;border-bottom:1px solid var(--line-soft)}
+
+  .saved{margin-top:26px;padding:24px 28px;border-radius:14px;background:linear-gradient(120deg,rgba(91,143,212,.08),rgba(12,21,38,.6));border:1px solid var(--line-royal)}
+  .saved .et{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:19px;color:var(--royal);margin-bottom:8px}
+  .saved p{font-size:14.5px;color:var(--paper);line-height:1.66;max-width:68ch}
+  .saved b{color:var(--silver);font-weight:600}
+  .inv-note{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--royal-2);margin-top:22px;text-align:center;line-height:1.6}
+
+  /* ————— GOOD TO KNOW ————— */
+  .gtk{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+  .gtk-item .lead{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--silver);display:block;margin-bottom:6px}
+  .gtk-item h3{font-family:'Bebas Neue';font-size:23px;color:var(--ivory);letter-spacing:.04em;margin-bottom:8px}
+  .gtk-item p{font-size:14.5px;color:var(--paper);line-height:1.64}
+
+  /* ————— CLOSE ————— */
+  .close{text-align:center;padding:88px 0 64px}
+  .close h2{font-size:clamp(36px,5.8vw,74px);max-width:18ch;margin:0 auto;text-shadow:0 0 70px rgba(205,214,220,.18)}
+  .close h2 em{font-style:normal;color:var(--silver)}
+  .close p{font-size:17px;color:var(--royal-2);max-width:54ch;margin:22px auto 38px;line-height:1.7}
+  .sig{display:inline-flex;flex-direction:column;align-items:center;gap:4px;padding-top:32px;border-top:1px solid var(--line);margin-top:6px}
+  .sig .nm{font-family:'Bebas Neue';font-size:28px;color:var(--ivory);letter-spacing:.08em}
+  .sig .rl{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16px;color:var(--silver)}
+  .sig .ct{font-family:'Archivo';font-size:13px;color:var(--royal-2);margin-top:9px;font-weight:300}
+
+  footer{border-top:1px solid var(--line-soft);padding:26px 0}
+  .foot-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:var(--royal-2)}
+
+  .reveal{opacity:0;transform:translateY(20px);transition:opacity 1s cubic-bezier(.2,.6,.2,1),transform 1s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  @media (max-width:800px){
+    .wrap{padding:0 22px}
+    .promise-row{grid-template-columns:1fr;gap:32px}
+    .room-inner{padding:28px 24px}
+    .room-media{min-height:190px}
+    .room-head{flex-direction:column;gap:14px}
+    .room-price{text-align:left}
+    .spec{grid-template-columns:1fr;gap:22px}
+    .incl{grid-template-columns:1fr;gap:30px}
+    .reqs{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr);gap:28px 18px;padding:28px 0}
+    .gallery{grid-template-columns:1fr;gap:12px}
+    .gtk{grid-template-columns:1fr;gap:24px}
+    .hero-foot{gap:22px}
+    .invest{padding:36px 22px}
+    .tl-row{grid-template-columns:1fr;gap:8px;padding:18px 0}
+    .tl-when{display:flex;align-items:baseline;gap:12px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none}
+    html{scroll-behavior:auto}
+    .room:hover{transform:none}
+  }
+  /* ————— CREW TABLE ————— */
+  .ctab{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px}
+  .ctab caption{caption-side:top;text-align:left;font-family:'Cormorant Garamond',serif;font-style:italic;
+    font-size:17px;color:var(--royal);padding:22px 0 10px}
+  .ctab th{font-family:'Archivo';font-size:10.5px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+    color:var(--silver);text-align:left;padding:0 12px 9px 0;border-bottom:1px solid var(--line)}
+  .ctab th.r,.ctab td.r{text-align:right;padding-right:0}
+  .ctab td{padding:10px 12px 10px 0;border-bottom:1px solid var(--line-soft);color:var(--paper);vertical-align:top}
+  .ctab tr:last-child td{border-bottom:none}
+  .ctab td.q{color:var(--ivory);font-variant-numeric:tabular-nums}
+  .ctab tfoot td{border-top:1px solid var(--line);border-bottom:none;padding-top:14px;
+    font-family:'Archivo';font-weight:600;color:var(--ivory)}
+  .ctab .ph{color:var(--royal);font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px}
+
+  /* ————— CALLOUT ANSWERS ————— */
+  .cos{display:flex;flex-direction:column;gap:14px;margin-top:8px}
+  .co{display:grid;grid-template-columns:44px 1fr;gap:20px;padding:24px 26px;border:1px solid var(--line);
+    border-radius:14px;background:linear-gradient(180deg,var(--ink-2),var(--ink))}
+  .co-n{font-family:'Bebas Neue';font-size:26px;color:var(--silver);line-height:1;opacity:.75}
+  .co-ask{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:16.5px;color:var(--royal);
+    line-height:1.5;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--line-soft)}
+  .co-ask b{font-style:normal;font-family:'Archivo';font-size:10.5px;font-weight:600;letter-spacing:.13em;
+    text-transform:uppercase;color:var(--silver-2);display:block;margin-bottom:6px}
+  .co-ans{font-size:15px;color:var(--paper);line-height:1.68}
+  .co-ans strong{color:var(--ivory);font-weight:500}
+  .co-ans ul{list-style:none;margin:10px 0 0;display:flex;flex-direction:column;gap:7px}
+  .co-ans li{padding-left:16px;position:relative}
+  .co-ans li::before{content:'—';position:absolute;left:0;color:var(--silver);opacity:.55}
+
+  /* ————— ALTERNATIVE PANEL ————— */
+  .alt{border:1px solid var(--line-royal);border-radius:18px;padding:44px 46px;
+    background:linear-gradient(150deg,rgba(91,143,212,.09),rgba(12,21,38,.75))}
+  .alt-tag{font-family:'Archivo';font-size:10.5px;font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+    color:var(--royal);margin-bottom:12px}
+  .alt h3{font-family:'Bebas Neue';font-size:clamp(28px,3.6vw,38px);color:var(--ivory);letter-spacing:.03em;margin-bottom:14px}
+  .alt p{font-size:15.5px;color:var(--paper);line-height:1.7;max-width:70ch}
+  .alt-fig{display:flex;flex-wrap:wrap;gap:14px 44px;align-items:baseline;margin-top:26px;padding-top:24px;
+    border-top:1px solid var(--line-soft)}
+  .alt-fig .v{font-family:'Bebas Neue';font-size:38px;color:var(--royal);letter-spacing:.02em;line-height:1}
+  .alt-fig .k{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:15px;color:var(--silver-2);display:block;margin-top:4px}
+
+  @media (max-width:800px){
+    .co{grid-template-columns:1fr;gap:10px;padding:22px 20px}
+    .alt{padding:30px 22px}
+    .ctab{font-size:13px}
+    .ctab th:nth-child(3),.ctab td:nth-child(3){display:none}
+  }
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="grain"></div>
+
+<!-- ═══ HERO ═══ -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap" style="width:100%">
+    <div class="topbar">
+      <div class="logo">LIMITLESS<small>Lights + Sound</small></div>
+      <div class="forwhom">
+        prepared for
+        <b>Dallas Cowboys</b>
+        <span>Draft Party · Ford Center at The Star</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="wrap" style="width:100%">
+    <div class="hero-mid">
+      <div class="hero-rule"></div>
+      <span class="eyebrow">Draft Party 2027 — Ford Center at The Star, Frisco, Texas</span>
+      <h1>You've run this<br>show ten times.<br><em>We won't be the variable.</em></h1>
+      <p class="hero-lede">This is a fixed scope, quoted as written, so it can be compared line for line against every other bid. Creative stays yours. What we're proposing to own is the technical execution — equipment, labor, transport and production management — and a front-end process built so nothing falls between the advance and the truck.</p>
+    </div>
+  </div>
+
+  <div class="wrap" style="width:100%">
+    <div class="hero-foot">
+      <div class="hf"><div class="k">the venue</div><div class="v">Ford Center at The Star · Frisco, TX</div></div>
+      <div class="hf"><div class="k">event</div><div class="v">April 2027 · setup day prior</div></div>
+      <div class="hf"><div class="k">our role</div><div class="v">Technical execution only</div></div>
+      <div class="hf"><div class="k">reference</div><div class="v">Quotation № 1675</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ POSITIONING ═══ -->
+<section id="positioning">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Where a bid like this is actually won</span>
+    <p class="lead-statement reveal">Everyone bidding this will quote similar gear at a similar number. <b>The difference is what happens before the trucks roll.</b></p>
+
+    <div class="promise-row reveal">
+      <div class="promise-col">
+        <span class="kk">Nothing gets dropped</span>
+        <h3>The front end is the product</h3>
+        <p>Buying good gear is not hard, and neither is plugging it in. What separates one vendor from the next on a show this well-established is whether a detail from last year quietly falls off this year's pick list. We run the front end on software we built ourselves: email threads linked into the job so the whole team sees the same conversation, advances and show packets generated automatically and handed to crew as live links we update in real time, crew staffed and briefed through an app, and a tech call before every show. No one arrives asking what we're doing today.</p>
+      </div>
+      <div class="promise-col">
+        <span class="kk">Engineered twice, then cloned forward</span>
+        <h3>The price you approve is the price that's right</h3>
+        <p>We deliberately separate the sales order from the bill of materials. After a scope is priced, it goes through an engineering pass — our team reads the drawings, the threads and the call recaps, and reconciles what was sold against what actually has to ship. Anything missed gets added on our side of the line, not yours, and the corrected build is saved against your account. Next April we clone it forward instead of rebuilding it from memory. That is how a recurring show stops drifting.</p>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><div class="n">13</div><div class="l">years, bootstrapped</div></div>
+      <div class="stat"><div class="n">$4.5M</div><div class="l">owned AV &amp; lighting</div></div>
+      <div class="stat"><div class="n">14</div><div class="l">full-time staff</div></div>
+      <div class="stat"><div class="n">300+</div><div class="l">vetted contractors</div></div>
+      <div class="stat"><div class="n">23</div><div class="l">crew on site at peak</div></div>
+    </div>
+
+    <p class="sec-intro reveal" style="margin-top:38px;max-width:74ch">We are Austin-based and effectively local to this room — trucks in Dallas every week, partner warehouses minutes away, and a standing local crew pool. The PA, the consoles, the LED, the lighting rig and the staging on this quote are all owned inventory. Nothing central to this show is sub-rented sight-unseen.</p>
+  </div>
+</section>
+
+<!-- ═══ SCOPE ═══ -->
+<section id="scope">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Section 2 — equipment scope</span>
+    <h2 class="sec-title reveal">Quoted as written.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:40px">Every quantity in Section 2 of your scope sheet is met or exceeded. Two substitutions are proposed; both are noted and justified below, as your document permits, and neither reduces the specification.</p>
+
+    <div class="rooms">
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">2.1</div>
+              <div class="room-label">Ford Center Field — main stage &amp; bowl</div>
+              <h3>Audio</h3>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">PA</div>
+              <ul>
+                <li>(16) L'Acoustics Kara II — ground-flown left/right</li>
+                <li>(4) L'Acoustics KS28 subwoofers</li>
+                <li>LA-Rack II with (3) LA12X amplification</li>
+                <li>(2) Sumner Eventer 25 lift towers</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Monitors &amp; fills</div>
+              <ul>
+                <li>(8) L'Acoustics X12 stage monitors</li>
+                <li>(4) L'Acoustics X8 front fill</li>
+                <li>(2) LA4X amplification</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Control &amp; RF</div>
+              <ul>
+                <li>Yamaha DM7C at front of house, Rio stage boxes</li>
+                <li>Shure ULXD 8-pack — quad receivers, UA874 directional antennas</li>
+                <li>Dedicated wireless package for the principal speaker</li>
+                <li>ClearCom FreeSpeak II 10-pack production comms</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Talent inputs</div>
+              <ul>
+                <li>Live mariachi — multi-input wired package, SM57 / e604 / Beta 52A / Beta 91A, stands and DI</li>
+                <li>DJ — wired mic and dedicated monitor</li>
+                <li>Full cabling and stage power package</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">2.2</div>
+              <div class="room-label">Ford Center Field — main stage &amp; bowl</div>
+              <h3>Lighting</h3>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Stage</div>
+              <ul>
+                <li>(12) Elation Rebel Wash 12 — stage wash at IMAG-capture levels</li>
+                <li>(4) Elation Paragon M moving fixtures</li>
+                <li>(8) Chauvet Strike M</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Backdrop</div>
+              <ul>
+                <li>(16) Robe Robin CycFX8 — RGB uplight on backdrop</li>
+                <li>(2) Magmatic Magma Prime 700W hazers with filtered fluid, behind backdrop</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Control &amp; support</div>
+              <ul>
+                <li>GrandMA3 Light console, Net-X II node, Optisplitter</li>
+                <li>(4) 14' lighting totems, ballasted ground support</li>
+                <li>Socapex distro, DMX and power cabling package</li>
+                <li>Ladders and lifts for focus and hang</li>
+              </ul>
+            </div>
+          </div>
+          <div class="room-crew"><b>Note —</b> haze is quoted and staged, subject to Ford Center approval and any smoke-detector isolation the venue requires.</div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">2.3</div>
+              <div class="room-label">Ford Center Field — main stage &amp; bowl</div>
+              <h3>Video</h3>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">LED walls</div>
+              <ul>
+                <li>(2) walls, 24'w × 13'h, on (2) ground support systems</li>
+                <li>Absen NT2.6 V2 XL at 2.6mm — noted substitution, see below</li>
+                <li>Ballast, fly bars, clamps and tower spacers throughout</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Processing</div>
+              <ul>
+                <li>(4) Novastar VX1000 Pro — single redundancy per wall</li>
+                <li>PC controller</li>
+                <li>(2) Socapex and Cat5 snakes per wall</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Downstream of handoff</div>
+              <ul>
+                <li>Decimator MD-HX conversion, BMD 12G SDI/HDMI adapters</li>
+                <li>BMD Mini Converter SDI-DA 1×8 distribution</li>
+                <li>Rack media server and 32" QLED confidence monitor</li>
+                <li>Full SDI, HDMI and Ethercon cable packages</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Power</div>
+              <ul>
+                <li>(1) 3-phase 208V AC distro on Socapex</li>
+                <li>(1) 100' feeder cable</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">2.4 / 2.5</div>
+              <div class="room-label">Ford Center Field — main stage &amp; bowl</div>
+              <h3>Staging &amp; Scenic</h3>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Staging</div>
+              <ul>
+                <li>Main stage 40'w × 32'd × 4't — 88 ft safety railing, (2) stair units, black skirting on 3 sides</li>
+                <li>(2) video wall risers 24'w × 8'd × 4.5't, skirted all sides</li>
+                <li>(1) camera riser 8' × 8' × 4', skirted, one step</li>
+                <li>(1) deck 4' × 4' × 2', skirted · (1) step unit for 2' stage</li>
+                <li>Front-of-house riser 20'w × 8'd × 4't with step</li>
+                <li>(2) bowl stair units</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Scenic</div>
+              <ul>
+                <li>Front-of-house black drape</li>
+                <li>Stage backdrop — truss, signage installation and labor</li>
+                <li>160 ft gray upstage drape: 40 ft hung on our own ground-supported truss, 120 ft ground-supported</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Miscellaneous</div>
+              <ul>
+                <li>Consumables / AV work box</li>
+                <li>3-phase AC distro with 80 ft feeder</li>
+                <li>Cable ramp including ADA crossings</li>
+              </ul>
+            </div>
+          </div>
+          <div class="room-crew"><b>Note —</b> ground support throughout. No house rigging points are assumed anywhere in this quote, including the 40 ft of hung drape, which flies on our own ground-supported truss.</div>
+        </div>
+      </div>
+
+      <div class="room reveal">
+        <div class="room-inner">
+          <div class="room-head">
+            <div>
+              <div class="room-num">2.2</div>
+              <div class="room-label">Separate area — set from 3:00 PM, struck with main AV</div>
+              <h3>VIP Plaza &amp; Concourse</h3>
+            </div>
+            <div class="room-price">
+              <div class="amt">$1,354.01</div>
+              <div class="cap">quoted as its own area</div>
+            </div>
+          </div>
+          <div class="spec">
+            <div class="spec-col">
+              <div class="h">Uplighting</div>
+              <ul>
+                <li>(32) Astera AX5 wireless battery uplights across concourse and VIP</li>
+                <li>Flood and wallwash optics supplied for each</li>
+              </ul>
+            </div>
+            <div class="spec-col">
+              <div class="h">Gobo package</div>
+              <ul>
+                <li>(1) custom metal gobo — VIP plaza</li>
+                <li>(1) glass gobo — VIP concourse</li>
+                <li>(2) Prolights ECL ProfileFS with 19° and 26° tubes, stands, bases and delivery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="room-crew"><b>Note —</b> gobo artwork is supplied by the Cowboys. Fixtures, stands, delivery and install are ours; creative and art-direction fees are excluded throughout, per Section 1.</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CREW & SCHEDULE ═══ -->
+<section id="crew">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Section 3 &amp; 3.1 — labor scope and crew statement</span>
+    <h2 class="sec-title reveal">Every position, mapped to your schedule.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:10px">Headcount and hours are quoted against the Section 4 production schedule, not a generic day. Figures below are exactly as they appear on Quotation 1675 — where a call crosses a premium threshold, the premium is folded into that role's line rather than billed as a separate surcharge.</p>
+
+    <div class="reveal">
+    <table class="ctab">
+      <caption>Setup day — Monday, April 19</caption>
+      <thead><tr><th>Position</th><th>Phase &amp; call</th><th class="r">Qty</th><th class="r">Time</th><th class="r">Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Labor Lead <span class="ph">(your Staging Supervisor)</span></td><td>Staging setup · 1:00–6:00 PM</td><td class="r q">1</td><td class="r q">5 hrs</td><td class="r q">$275.00</td></tr>
+        <tr><td>Stagehand <span class="ph">(your Staging Hand)</span></td><td>Staging setup · 1:00–6:00 PM</td><td class="r q">5</td><td class="r q">5 hrs</td><td class="r q">$1,125.00</td></tr>
+        <tr><td>Crew Chief <span class="ph">(your Technical Manager)</span></td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$920.00</td></tr>
+        <tr><td>Show-caller / TD</td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$800.00</td></tr>
+        <tr><td>Audio Engineer (A1)</td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$776.25</td></tr>
+        <tr><td>Audio Technician (A2)</td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$632.50</td></tr>
+        <tr><td>Lighting Technician (L2)</td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$632.50</td></tr>
+        <tr><td>Video Wall Technician (LED)</td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$690.00</td></tr>
+        <tr><td>Stagehand <span class="ph">(your AV Hand)</span></td><td>AV install · 2:00 PM–1:00 AM</td><td class="r q">10</td><td class="r q">8 hrs</td><td class="r q">$3,600.00</td></tr>
+      </tbody>
+    </table>
+
+    <table class="ctab">
+      <caption>Event day — Tuesday, April 20 · crew call 2:00 PM, sound check 2:30, rehearsal 4:30, VIP doors 5:30</caption>
+      <thead><tr><th>Position</th><th>Phase &amp; call</th><th class="r">Qty</th><th class="r">Time</th><th class="r">Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Crew Chief <span class="ph">(your Technical Manager)</span></td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">12 hrs</td><td class="r q">$920.00</td></tr>
+        <tr><td>Stage Manager</td><td>Show &amp; strike · from 4:00 PM</td><td class="r q">1</td><td class="r q">11 hrs</td><td class="r q">$550.00</td></tr>
+        <tr><td>Show-caller / TD</td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">1 day</td><td class="r q">$800.00</td></tr>
+        <tr><td>Audio Engineer (A1)</td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">13 hrs</td><td class="r q">$877.50</td></tr>
+        <tr><td>Audio Technician (A2)</td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">13 hrs</td><td class="r q">$715.00</td></tr>
+        <tr><td>Lighting Technician (L2)</td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">13 hrs</td><td class="r q">$715.00</td></tr>
+        <tr><td>Video Wall Technician (LED)</td><td>Show &amp; strike · 2:00 PM–2:00 AM</td><td class="r q">1</td><td class="r q">13 hrs</td><td class="r q">$780.00</td></tr>
+      </tbody>
+    </table>
+
+    <table class="ctab">
+      <caption>Strike — Tuesday night into Wednesday, April 20–21</caption>
+      <thead><tr><th>Position</th><th>Phase &amp; call</th><th class="r">Qty</th><th class="r">Time</th><th class="r">Cost</th></tr></thead>
+      <tbody>
+        <tr><td>Stagehand <span class="ph">(your AV Hand)</span></td><td>AV strike · 10:30 PM–2:30 AM</td><td class="r q">10</td><td class="r q">5-hr min</td><td class="r q">$2,812.50</td></tr>
+        <tr><td>Labor Lead <span class="ph">(your Staging Supervisor)</span></td><td>Staging strike &amp; reset · 11:30 PM–4:30 AM</td><td class="r q">1</td><td class="r q">5-hr min</td><td class="r q">$398.75</td></tr>
+        <tr><td>Stagehand <span class="ph">(your Staging Hand)</span></td><td>Staging strike &amp; reset · 11:30 PM–4:30 AM</td><td class="r q">5</td><td class="r q">5-hr min</td><td class="r q">$1,631.25</td></tr>
+      </tbody>
+      <tfoot>
+        <tr><td colspan="4">Total labor — all phases</td><td class="r">$19,651.25</td></tr>
+      </tfoot>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ EVERY CALLOUT ANSWERED ═══ -->
+<section id="callouts">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Answers to every statement your RFQ requires</span>
+    <h2 class="sec-title reveal">Eighteen asks. Eighteen answers.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:38px">Your scope sheet asks bidders to state specific things in writing, in eight separate places. Each one is quoted below and answered directly. Nothing is left to interpretation, and nothing is priced around an unknown.</p>
+
+    <div class="cos reveal">
+
+      <div class="co"><div class="co-n">01</div><div>
+        <div class="co-ask"><b>Section 1 — Suggested alternatives</b>“Please present it as a separate, individually priced line at the end of your proposal, labeled as an alternative. Alternatives will not be included in the base price comparison.”</div>
+        <div class="co-ans">One alternative is offered — a split strike that moves labor out of the after-midnight premium window. It is priced separately, labeled, and presented at the very end of this document. <strong>It is excluded from the base price of $47,623.35.</strong> We are not proposing any other departure from your scope.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">02</div><div>
+        <div class="co-ask"><b>Section 2 — Substitutions</b>“Equivalent substitutions are acceptable if noted and justified.”</div>
+        <div class="co-ans">Two substitutions, both upward:
+          <ul>
+            <li><strong>LED pitch — 2.6mm in place of the 3.9mm baseline.</strong> We own Absen NT2.6 V2 XL and are putting it on this show at no premium over the specified product. At bowl viewing distances the tighter pitch measurably cleans up IMAG on faces, which is most of what these walls carry. Wall dimensions are unchanged at 24'w × 13'h.</li>
+            <li><strong>Confidence monitoring — rack media server and 32" QLED display in place of the BlackMagic Duo.</strong> Same job, more headroom: it gives your control room a full-resolution confirmation of what is actually landing on the walls, and gives us local playback capability if a backup source is ever needed.</li>
+          </ul>
+          Every other quantity and specification in Section 2 is quoted exactly as written.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">03</div><div>
+        <div class="co-ask"><b>Section 2.1 — Audio capability</b>“State what your quoted package can support, and identify any rider element that would require equipment or crew beyond this quote.”</div>
+        <div class="co-ans"><strong>What this package supports as quoted:</strong> a sixteen-box Kara II system with four KS28 subs covering Ford Center Field at full program level; eight X12 wedges and four X8 front fills; a Yamaha DM7C at front of house with Rio stage boxes; an eight-channel ULXD wireless pool with directional antennas; a dedicated wireless package reserved for the principal speaker; a fully miked live mariachi input list with stands and DI; and a wired mic and dedicated monitor for the DJ. Comms rides on the A1's system at front of house.
+          <br><br><strong>What would exceed it:</strong> a touring artist rider calling for a specific console brand at front of house or monitors; a monitor world with a dedicated M1 engineer; in-ear monitoring beyond the wireless pool quoted; an input count materially past the mariachi list; or a headline act's own control package requiring patch and power we have not allowed for. Any of those is a separately priced add — we would rather flag it now than discover it in the advance. A final artist rider supersedes this package.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">04</div><div>
+        <div class="co-ask"><b>Section 2.3 — Handoff: format, connector, resolution, frame rate</b>“What you require at the handoff — signal format, connector type, resolution and frame rate.”</div>
+        <div class="co-ans"><strong>Format and connector:</strong> 12G-SDI terminated BNC, or single-mode fiber to our rack with the break-out on our side.
+          <br><strong>Preferred resolution and frame rate:</strong> 2688 × 1512, 60 fps progressive — a native 16:9 canvas that maps one-to-one across the pair of walls with no scaling loss.
+          <br><strong>Also accepted:</strong> 1920 × 1080p at 60 fps over 3G-SDI, which we upscale and map in our processing.
+          <br>Either signal is accepted as a finished program feed. We require no genlock or reference from your control room.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">05</div><div>
+        <div class="co-ask"><b>Section 2.3 — Cable run</b>“Cable run length you are assuming from control room to wall positions, and who supplies that run.”</div>
+        <div class="co-ans"><strong>We supply and run it, and it is in this price.</strong> We have allowed a 200 ft primary run from the control-room handoff to the first wall position, with a further 150 ft of 12G and a 100 ft tie between wall positions — carried as 12G-SDI, 3G-SDI and Ethercon looms in the quote. If your control room can instead deliver to a stage-left drop, we take it from there and the run shortens; either way the cable is ours and the number does not change. We will confirm the exact handoff point on the site walk rather than guess at it now.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">06</div><div>
+        <div class="co-ask"><b>Section 2.3 — Redundancy and signal loss</b>“Redundancy provided on the feed path, and behavior on signal loss.”</div>
+        <div class="co-ans"><strong>Redundancy:</strong> four Novastar VX1000 Pro processors, configured as a single-redundant pair per wall, with PC controller. Each wall has a hot spare processor with the feed already present on it; a failed primary fails over without an operator touching the rack.
+          <br><strong>On signal loss:</strong> the wall holds last frame rather than dropping to noise or snow, and if the feed does not return it goes to a black slate. It will never show an error dialog, a desktop, or colour bars to your bowl. The LED Wall Technician is on headset for the entire show and is the person who makes that call.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">07</div><div>
+        <div class="co-ask"><b>Section 2.3 — Gear on our side of the handoff</b>“Any conversion or distribution gear needed on your side of the handoff, itemized.”</div>
+        <div class="co-ans">All of the following is ours and is in the base price:
+          <ul>
+            <li>(4) Novastar VX1000 Pro processors + PC controller</li>
+            <li>(4) Decimator MD-HX cross-converters</li>
+            <li>(4) BMD 12G HDMI-to-SDI and (4) BMD 12G SDI-to-HDMI adapters</li>
+            <li>(2) BMD Mini Converter SDI-DA 1×8 distribution amplifiers</li>
+            <li>(1) HDMI splitter 1×4</li>
+            <li>(1) rack-mounted media server (RTX A6000 / DeckLink 8K) and 32" QLED confidence monitor</li>
+            <li>(2) Socapex and Cat5 data snakes per wall, Ethercon looms, SDI 12G/3G and HDMI cable packages, barrels and spares</li>
+          </ul>
+          You supply the program feed. Everything downstream of that connector is ours.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">08</div><div>
+        <div class="co-ask"><b>Section 3 — Variance from the baseline crew plan</b>“If your operating model requires different headcount or hours, quote the baseline first, then show your variance separately with an explanation.”</div>
+        <div class="co-ans">We have quoted your baseline. Four variances, all stated:
+          <ul>
+            <li><strong>Production Manager, 4 days pre-production — not billed.</strong> Your baseline prices this as a line item. We do not charge it separately; pre-production, advancing and the engineering pass are absorbed into our Crew Chief and Show-caller day rates. This is a real reduction against the baseline, not a scope cut.</li>
+            <li><strong>We add a Show-caller / TD on both days</strong> alongside the Crew Chief. Your baseline has one Technical Manager; we split the room-running and the show-calling because on a two-wall build with a rehearsal and a live band they are genuinely two jobs.</li>
+            <li><strong>AV Hands at strike — 5-hour minimum against your 4-hour line.</strong> Our hands bill a five-hour minimum; we have quoted honestly rather than showing four and invoicing five.</li>
+            <li><strong>Setup-day technicians are quoted at a day rate</strong> rather than an 11-hour line. The call is the same 2:00 PM–1:00 AM; the day rate is the cheaper of the two for you.</li>
+          </ul>
+          Staging Supervisor, Staging Hands, AV Hand setup hours and all show-day technician positions match your baseline one for one.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">09</div><div>
+        <div class="co-ask"><b>Section 3 — LED Wall Tech priced separately</b>“Price this position as its own line so it can be evaluated separately.”</div>
+        <div class="co-ans">Broken out as requested. <strong>Video Wall Technician (LED): $690.00 setup day + $780.00 show and strike = $1,470.00 total.</strong> This position covers commissioning, calibration and in-show support of our walls and processing only. It does not include content switching or operation, which stays with your control room.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">10</div><div>
+        <div class="co-ask"><b>Section 3 — Crew meals</b>“Crew meals are the vendor's responsibility unless otherwise negotiated; state your assumption.”</div>
+        <div class="co-ans"><strong>We feed our own crew. There is no meal line anywhere in this quote and none will appear on an invoice.</strong> Where no meals are provided on site, all we ask is a one-hour walkaway during the setup or show day so crew can break properly. If the Cowboys choose to put out food, it is a kind gesture and genuinely appreciated — but it is not expected, not negotiated, and not assumed anywhere in this price.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">11</div><div>
+        <div class="co-ask"><b>Section 3.1 — Crew size by position</b>“The actual headcount you intend to deploy for each role, in each phase.”</div>
+        <div class="co-ans">Stated in full in the three tables above — every position, every phase, with the headcount we actually intend to put in the building. <strong>Peak is 23 people on site</strong>, during the 2:00–6:00 PM setup-day overlap and again through the strike window. These are the numbers we staff to, not a placeholder.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">12</div><div>
+        <div class="co-ask"><b>Section 3.1 — Hours mapped to the schedule</b>“Scheduled hours per position, mapped against the production schedule in Section 4, not against a generic day.”</div>
+        <div class="co-ans">Every call in the tables above is written against your Section 4 times: staging from 1:00 PM and AV from 2:00 PM on setup day; crew call 2:00 PM, sound check 2:30, uplights and gobos in VIP from 3:00, stage manager 4:00, rehearsal 4:30, VIP doors 5:30 on event day; AV strike call 10:30 PM, doors close 11:00 PM, staging strike and reset from 11:30 PM. No position is priced against a generic ten- or twelve-hour day.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">13</div><div>
+        <div class="co-ask"><b>Section 3.1 — Minimum call times</b>“Minimum call times per position, and whether minimums are billed when actual hours fall short.”</div>
+        <div class="co-ans"><strong>Technicians:</strong> 10-hour minimum. <strong>AV Hands and Staging Hands:</strong> 5-hour minimum. <strong>Yes — minimums are billed even when the actual call runs short.</strong> That is why the strike lines above read “5-hr min” against a 4-hour scheduled strike: we would rather show you the five now than quote four and invoice five later. If a call genuinely runs long past its minimum, it bills at actual.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">14</div><div>
+        <div class="co-ask"><b>Section 3.1 — Overtime</b>“The hour at which OT begins for each position, the multiplier applied, and which specific hours in this schedule you expect to bill at premium.”</div>
+        <div class="co-ans"><strong>Trigger:</strong> the 10th worked hour, or 12:00 AM — whichever comes first. This is the same for every position on this job.
+          <br><strong>Multiplier:</strong> 1.5×, applied once. When both triggers coincide, as they do on show night, it does <em>not</em> stack.
+          <br><strong>The specific hours at premium in this schedule:</strong>
+          <ul>
+            <li>AV install, Mon Apr 19 — the 11th hour, roughly 12:00–1:00 AM. <strong>1 hour.</strong></li>
+            <li>Show and strike, Tue Apr 20 — 12:00–2:00 AM. <strong>2 hours.</strong></li>
+            <li>AV strike, Tue–Wed — <strong>2.5 hours</strong> inside the 5-hour minimum call.</li>
+            <li>Staging strike and reset, Tue–Wed — <strong>4.5 hours</strong> inside the 5-hour minimum call.</li>
+          </ul>
+          Every one of those is already folded into the line costs in the tables above. There is no separate overtime surcharge to come.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">15</div><div>
+        <div class="co-ask"><b>Section 3.1 — Doubletime</b>“Doubletime thresholds and any premium applied to work performed after midnight.”</div>
+        <div class="co-ans"><strong>There is no doubletime on this job. No threshold, no 2× band, at any hour.</strong> Work after midnight is billed at 1.5×, once, and that is the ceiling. We have seen bids on shows like this where a late strike quietly doubles — that is not how our rate card works, and we would rather you know it before you compare numbers than after.</div>
+      </div></div>
+
+      <div class="co"><div class="co-n">16</div><div>
+        <div class="co-ask"><b>Section 3.1 — After midnight, explicitly</b>“Every bidder must state explicitly how the hours after midnight are billed, and identify which crew are affected.”</div>
+        <div class="co-ans"><strong>How they are billed:</strong> at 1.5× the position's rate, applied once, with no doubletime and no stacking against the 10-hour trigger.
+          <br><strong>Which crew are affected, by name:</strong>
+          <ul>
+            <li>Setup night, 12:00–1:00 AM — Crew Chief, Show-caller, A1, A2, Lighting Technician, LED Technician.</li>
+            <li>Show night, 12:00–2:00 AM — Crew Chief, Stage Manager, A1, A2, Lighting Technician, LED Technician.</li>
+            <li>AV strike — all 10 AV Hands.</li>
+            <li>Staging strike and reset — the Labor Lead and all 5 Staging Hands.</li>
+          </ul>
+          <strong>Not affected:</strong> the staging setup call on Monday, which finishes at 6:00 PM.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">17</div><div>
+        <div class="co-ask"><b>Section 4 &amp; 6 — Strike timing</b>“State plainly how your rate card treats these hours and whether any portion of the strike is billed at premium rates. If an earlier or split strike would reduce cost, say so.”</div>
+        <div class="co-ans"><strong>Plainly: yes, a portion of the strike is at premium.</strong> The AV strike carries 2.5 premium hours and the staging strike and reset carries 4.5, both at 1.5×, both already inside the base price. Total strike labor as scheduled is <strong>$4,842.50</strong>.
+          <br><br><strong>And yes — an earlier or split strike would reduce cost.</strong> We are not going to pretend otherwise. If the same crew and the same hours were worked entirely before midnight, that same strike labor would be <strong>$3,650.00</strong>. The full alternative is priced at the end of this document.
+        </div>
+      </div></div>
+
+      <div class="co"><div class="co-n">18</div><div>
+        <div class="co-ask"><b>Section 5 — What else we require from you</b>“Confirm in your quote what else you require from the client that is not listed here — power, parking, catering, rigging points, credentials, or anything else.”</div>
+        <div class="co-ans">Beyond what Section 5 already commits, we need six things. None are surprises and none carry a cost:
+          <ul>
+            <li><strong>House power tie-in points and available amperage</strong> — confirmed before load-in so our distro lands in the right place.</li>
+            <li><strong>Forklift and load-in dock coordination</strong> — two trucks each way.</li>
+            <li><strong>Crew credentials</strong> for up to 23 people across setup and show days, plus vehicle access for two box trucks.</li>
+            <li><strong>Haze approval and smoke-detector isolation</strong> — hazers are quoted; the venue's sign-off is yours to give.</li>
+            <li><strong>Rigging point sign-off only if</strong> any flown drape is later asked to exceed our ground-support capacity. As quoted we assume none and use no house points.</li>
+            <li><strong>Crew parking.</strong> Catering we do not need — see answer 10.</li>
+          </ul>
+          <strong>Not required:</strong> house rigging, client crew of any discipline, or a storeroom beyond the secure one Section 5 already provides.
+        </div>
+      </div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══ INVESTMENT ═══ -->
+<section id="investment">
+  <div class="wrap">
+    <div class="invest reveal">
+      <div class="inv-in">
+        <div class="inv-label">base price</div>
+        <div class="inv-sub">equipment, labor, transport and production management · before tax</div>
+        <div class="inv-figure">$47,623<span>.35</span></div>
+        <div class="inv-figcap">the full Section 2 and Section 3 scope, quoted as written</div>
+
+        <div class="inv-lines">
+          <div class="inv-head">By area</div>
+          <div class="inv-line sub-line"><div class="lab">1 · Ford Center Field — main stage &amp; bowl</div><div class="val">$44,269.34</div></div>
+          <div class="inv-line sub-line"><div class="lab">2 · VIP Plaza &amp; Concourse</div><div class="val">$1,354.01</div></div>
+          <div class="inv-line sub-line"><div class="lab">3 · Trucking — 2 trucks each way, Austin to Frisco</div><div class="val">$2,000.00</div></div>
+
+          <div class="inv-head">By category</div>
+          <div class="inv-line"><div class="lab">Equipment rental <small>audio, lighting, video, staging, scenic, power</small></div><div class="val">$25,363.10</div></div>
+          <div class="inv-line"><div class="lab">Production services &amp; crew <small>all labor, production management, transport</small></div><div class="val">$21,651.25</div></div>
+          <div class="inv-line"><div class="lab">Consumables &amp; sale items <small>tape, fluid, expendables</small></div><div class="val">$609.00</div></div>
+          <div class="inv-line"><div class="lab">Base price — before tax</div><div class="val">$47,623.35</div></div>
+          <div class="inv-line tax"><div class="lab">Sales tax</div><div class="val">$3,064.12</div></div>
+          <div class="inv-line total"><div class="lab">Total due</div><div class="val">$50,687.47</div></div>
+        </div>
+
+        <div class="saved">
+          <div class="et">Partner pricing — already reflected above.</div>
+          <p>Every figure on this page is net of a <b>$34,973.50</b> discount against our list rates. We have not held anything back for a second round. This is our number, and it is the same number we would give you in February as we would in April.</p>
+        </div>
+
+        <div class="inv-note">Quotation № 1675 · order date 09-15-2026 · event April 2027 with setup the day prior · a certificate of insurance naming Limitless Lights and Sound LLC as additional insured and loss payee is required for the rental period.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ALTERNATIVE ═══ -->
+<section id="alternative">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Section 1 — suggested alternative, separately priced</span>
+    <h2 class="sec-title reveal">One alternative. Excluded from the base.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:34px">Presented here at the end, individually priced and labeled, exactly as your Section 1 asks. It is <strong>not</strong> included in the $47,623.35 base price and should not be read into any comparison against other bids.</p>
+
+    <div class="alt reveal">
+      <div class="alt-tag">Alternative A — split strike</div>
+      <h3>Move the strike out of the premium window</h3>
+      <p>As scheduled, the AV strike runs 10:30 PM to 2:30 AM and the staging strike and reset runs 11:30 PM to 4:30 AM. Between them they carry seven hours of 1.5× labor. If the Cowboys can release a portion of the room the following morning, we would strike the sensitive and high-value packages on the night — LED, control, PA, RF — and return at 7:00 AM for staging, drape and the room reset with the same crew at straight time.</p>
+      <p style="margin-top:14px">The saving scales with how much moves to the morning. Striking <em>everything</em> outside the premium window, at identical crew and identical hours, is the ceiling: strike labor falls from <strong>$4,842.50</strong> to <strong>$3,650.00</strong>. A realistic split lands between the two, and we would price it exactly once the venue confirms what morning access is actually available.</p>
+      <div class="alt-fig">
+        <div><div class="v">−$1,192.50</div><span class="k">maximum credit against base labor</span></div>
+        <div><div class="v">$46,430.85</div><span class="k">base price if fully applied, before tax</span></div>
+        <div><div class="v">2.5%</div><span class="k">of the base price</span></div>
+      </div>
+      <p style="margin-top:22px;font-size:14.5px;color:var(--silver-2)">Worth saying plainly: this is a real saving but not a large one, and it costs you a morning of room access. We are presenting it because you asked whether an earlier or split strike would reduce cost, and the honest answer is yes — by about two and a half percent. If holding the room overnight is worth more than twelve hundred dollars to you, take the base.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GOOD TO KNOW ═══ -->
+<section id="terms">
+  <div class="wrap">
+    <span class="eyebrow sec-eyebrow reveal">Good to know</span>
+    <h2 class="sec-title reveal">Clear terms, no surprises.</h2>
+    <p class="sec-intro reveal" style="margin-bottom:38px">The essentials up front, well before the first truck rolls.</p>
+
+    <div class="gtk reveal">
+      <div class="gtk-item">
+        <span class="lead">changes</span>
+        <h3>On-site changes absorbed</h3>
+        <p>We accommodate on-site changes within the bounds of safety and equipment capacity — normal for a show with a rehearsal in it. Anything that materially expands the package is quoted before it happens, never after the fact on an invoice.</p>
+      </div>
+      <div class="gtk-item">
+        <span class="lead">condition</span>
+        <h3>Tested in, inspected out</h3>
+        <p>Equipment leaves our shop bench-tested and in proper working order, and is inspected on return within a standard five-day window. Counts and any damage are assessed back in Austin, never rushed at a 2:00 AM load-out.</p>
+      </div>
+      <div class="gtk-item">
+        <span class="lead">coverage</span>
+        <h3>Insurance &amp; additional insured</h3>
+        <p>A certificate of insurance with liability and inland-marine coverage, naming Limitless Lights and Sound LLC as additional insured and loss payee for the rental period, is required before the trucks load.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLOSE ═══ -->
+<section class="close">
+  <div class="wrap">
+    <h2 class="reveal">Questions are <em>welcome and encouraged.</em></h2>
+    <p class="reveal">Your scope sheet says you would rather answer a question in advance than have a bidder price around an unknown. We agree, and we have tried to leave you nothing to guess at. Anything here you want pulled apart — the crew plan, the handoff, the strike math — call and we will walk it line by line.</p>
+    <div class="sig reveal">
+      <div class="nm">Dash Speer</div>
+      <div class="rl">founder · Limitless Lights + Sound</div>
+      <div class="ct">dash@limitlesslightsandsound.com&nbsp;&nbsp;·&nbsp;&nbsp;(281) 787-9069</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <span>Limitless Lights + Sound</span>
+      <span>prepared for Dallas Cowboys · № 1675</span>
+      <span>Austin · Houston · Dallas</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.1,rootMargin:'0px 0px -5% 0px'});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,3)*65)+'ms';io.observe(el);});
+</script>
+</body>
+</html>
