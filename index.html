@@ -77,6 +77,8 @@
 
   .topbar{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
   .logo{font-family:'Bebas Neue';font-size:27px;letter-spacing:.17em;color:var(--ivory)}
+  .logo img{display:block;width:150px;height:auto}
+  .logo:hover{opacity:.88;transition:opacity .4s}
   .logo small{display:block;font-family:'Cormorant Garamond';font-style:italic;font-size:13px;letter-spacing:.06em;color:var(--royal-2);margin-top:2px}
   .forwhom{text-align:right;font-family:'Cormorant Garamond',serif;font-size:16px;color:var(--royal-2);line-height:1.7;font-style:italic}
   .forwhom b{color:var(--silver);font-weight:600;font-style:normal;display:block;font-family:'Archivo';font-size:13px;letter-spacing:.02em;margin:2px 0 1px}
@@ -237,6 +239,7 @@
 
   @media (max-width:800px){
     .wrap{padding:0 22px}
+    .logo img{width:112px}
     .promise-row{grid-template-columns:1fr;gap:32px}
     .room-inner{padding:28px 24px}
     .room-media{min-height:190px}
@@ -316,7 +319,7 @@
   <div class="hero-bg"></div>
   <div class="wrap" style="width:100%">
     <div class="topbar">
-      <div class="logo">LIMITLESS<small>Lights + Sound</small></div>
+      <a class="logo" href="https://limitlesslightsandsound.com" target="_blank" rel="noopener"><img src="img/limitless-logo.png" alt="Limitless Lights + Sound"></a>
       <div class="forwhom">
         prepared for
         <b>Dallas Cowboys</b>
